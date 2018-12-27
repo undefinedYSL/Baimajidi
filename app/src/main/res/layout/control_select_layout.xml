@@ -1,0 +1,3642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/background2">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TabWidget
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs">
+        </TabWidget>
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@android:id/tabcontent">
+            //单栋温室1
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/tab01">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout11">
+                    <TextView
+                        android:id="@+id/tab11_tv1"
+                        android:layout_width="150dp"
+                        android:layout_height="31dp"
+                        android:layout_marginBottom="101dp"
+                        android:text="请选择房间号"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"/>
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+                    </Spinner>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="手自动切换"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/auto_11_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自动"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/auto_11_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="手动"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="轴流风机控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/fengji_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/fengji_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="顶开窗控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+                        <RadioButton
+                            android:id="@+id/dingji_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/dingji_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/dingji_1_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/dingji_1_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="内遮阴机组控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+                        <RadioButton
+                            android:id="@+id/neizhemu_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/neizhemu_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/neizhemu_1_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/neizhemu_1_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="补光灯组控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+                        <RadioButton
+                            android:id="@+id/light_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/light_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="湿帘水泵控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+                        <RadioButton
+                            android:id="@+id/shilian_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/shilian_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv17"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="地源热泵"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/layout_tab17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="电源开关："/>
+                        <RadioGroup
+                            android:id="@+id/radioGroup17_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/dianyuan_1_on"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="开"
+                                android:textColor="@color/dark" />
+                            <RadioButton
+                                android:id="@+id/dianyuan_1_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="关"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="模式："/>
+                        <RadioGroup
+                            android:id="@+id/radioGroup17_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/moshi_1_on"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="制热"
+                                android:textColor="@color/dark" />
+                            <RadioButton
+                                android:id="@+id/moshi_1_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="制冷"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="风速："/>
+                        <RadioGroup
+                            android:id="@+id/radioGroup17_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/fengsu_1_low"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="低"
+                                android:textColor="@color/dark" />
+                            <RadioButton
+                                android:id="@+id/fengsu_1_mid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="中"
+                                android:textColor="@color/dark" />
+                            <RadioButton
+                                android:id="@+id/fengsu_1_high"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="高"
+                                android:textColor="@color/dark" />
+                            <RadioButton
+                                android:id="@+id/fengsu_1_auto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="自动"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当前室温："/>
+                        <TextView
+                            android:id="@+id/shiwen1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="温度调节:"/>
+                        <LinearLayout
+                            android:id="@+id/NumView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+                            <Button
+                                android:id="@+id/Decrease1"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:clickable="true"
+                                android:background="@drawable/decrease"/>
+                            <EditText
+                                android:id="@+id/Num1"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:background="#00000000" />
+                            <Button
+                                android:id="@+id/Increase1"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:clickable="true"
+                                android:background="@drawable/add"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+                            <Button
+                                android:id="@+id/Confirm1"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:text="确定"
+                                android:textColor="@color/white"
+                                android:background="@drawable/queding"
+                                android:clickable="true"/>
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:text=""/>
+                            <Button
+                                android:id="@+id/Quit1"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:text="取消"
+                                android:textColor="@color/white"
+                                android:background="@drawable/queding"
+                                android:clickable="true"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/kongbai1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:text=""/>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            //单栋2
+
+            <LinearLayout
+                android:id="@+id/tab02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout21">
+                <TextView
+                    android:id="@+id/tab11_tv2"
+                    android:layout_width="150dp"
+                    android:layout_height="31dp"
+                    android:layout_marginBottom="101dp"
+                    android:text="请选择房间号"
+                    android:textSize="16dp"
+                    android:textColor="@color/dark"/>
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                </Spinner>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv21"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="手自动切换"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                <RadioGroup
+                    android:id="@+id/radioGroup21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/auto_21_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自动"
+                        android:textColor="@color/dark" />
+                    <RadioButton
+                        android:id="@+id/auto_21_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="手动"
+                    android:textColor="@color/dark" />
+                </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv22"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="轴流风机控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                <RadioGroup
+                    android:id="@+id/radioGroup22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/fengji_2_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="启动"
+                    android:textColor="@color/dark" />
+                <RadioButton
+                    android:id="@+id/fengji_2_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="停止"
+                    android:textColor="@color/dark" />
+                </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv23"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="顶开窗控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                <RadioGroup
+                    android:id="@+id/radioGroup23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+                    <RadioButton
+                        android:id="@+id/dingji_2_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="展开"
+                        android:textColor="@color/dark" />
+                    <RadioButton
+                        android:id="@+id/dingji_2_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收缩"
+                        android:textColor="@color/dark" />
+                    <RadioButton
+                        android:id="@+id/dingji_2_onstop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="展开停止"
+                        android:textColor="@color/dark" />
+                    <RadioButton
+                        android:id="@+id/dingji_2_offstop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="收缩停止"
+                        android:textColor="@color/dark" />
+                </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv24"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="内遮阴机组控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+                        <RadioButton
+                            android:id="@+id/neizhemu_2_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/neizhemu_2_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/neizhemu_2_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/neizhemu_2_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    </LinearLayout>
+                <TextView
+                    android:id="@+id/tv25"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="补光灯组控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                <RadioGroup
+                    android:id="@+id/radioGroup25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/light_2_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="启动"
+                    android:textColor="@color/dark" />
+                <RadioButton
+                    android:id="@+id/light_2_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="停止"
+                    android:textColor="@color/dark" />
+            </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv26"
+                android:layout_width="fill_parent"
+                android:layout_height="90px"
+                android:background="@drawable/top_bar_bg1"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:text="湿帘水泵控制"
+                android:textColor="#000000"
+                android:textSize="40px"
+                android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                <RadioGroup
+                    android:id="@+id/radioGroup26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/shilian_2_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="启动"
+                    android:textColor="@color/dark" />
+                <RadioButton
+                    android:id="@+id/shilian_2_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="停止"
+                    android:textColor="@color/dark" />
+            </RadioGroup>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv27"
+                android:layout_width="fill_parent"
+                android:layout_height="90px"
+                android:background="@drawable/top_bar_bg1"
+                android:clickable="true"
+                android:gravity="center_vertical|left"
+                android:text="地源热泵"
+                android:textColor="#000000"
+                android:textSize="40px"
+                android:typeface="sans" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/layout_tab27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="电源开关："/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup27_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/dianyuan_2_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开"
+                        android:textColor="@color/dark" />
+                    <RadioButton
+                        android:id="@+id/dianyuan_2_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="关"
+                        android:textColor="@color/dark" />
+                    </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="模式："/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup27_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/moshi_2_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="制热"
+                        android:textColor="@color/dark" />
+                    <RadioButton
+                        android:id="@+id/moshi_2_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="制冷"
+                        android:textColor="@color/dark" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="风速："/>
+                <RadioGroup
+                    android:id="@+id/radioGroup27_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/fengsu_2_low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="低"
+                        android:textColor="@color/dark" />
+                    <RadioButton
+                        android:id="@+id/fengsu_2_mid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="中"
+                        android:textColor="@color/dark" />
+                    <RadioButton
+                        android:id="@+id/fengsu_2_high"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="高"
+                        android:textColor="@color/dark" />
+                    <RadioButton
+                        android:id="@+id/fengsu_2_auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="自动"
+                        android:textColor="@color/dark" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前室温："/>
+                <TextView
+                    android:id="@+id/shiwen2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="温度调节:"/>
+                <LinearLayout
+                    android:id="@+id/NumView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+                    <Button
+                        android:id="@+id/Decrease2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:background="@drawable/decrease"/>
+                    <EditText
+                        android:id="@+id/Num2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:background="#00000000" />
+                    <Button
+                        android:id="@+id/Increase2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:clickable="true"
+                        android:background="@drawable/add"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+                    <Button
+                        android:id="@+id/Confirm2"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:text="确定"
+                        android:textColor="@color/white"
+                        android:background="@drawable/queding"
+                        android:clickable="true"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text=""/>
+                    <Button
+                        android:id="@+id/Quit2"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:text="取消"
+                        android:textColor="@color/white"
+                        android:background="@drawable/queding"
+                        android:clickable="true"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/kongbai2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:text=""/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+            //单栋3
+            <LinearLayout
+                android:id="@+id/tab03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout31">
+                    <TextView
+                        android:id="@+id/tab11_tv3"
+                        android:layout_width="150dp"
+                        android:layout_height="31dp"
+                        android:layout_marginBottom="101dp"
+                        android:text="请选择房间号"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"/>
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+                    </Spinner>
+                </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv31"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90px"
+                        android:background="@drawable/top_bar_bg1"
+                        android:clickable="true"
+                        android:gravity="center_vertical|left"
+                        android:text="手自动切换"
+                        android:textColor="#000000"
+                        android:textSize="40px"
+                        android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/auto_31_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/auto_31_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="手动"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv32"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90px"
+                        android:background="@drawable/top_bar_bg1"
+                        android:clickable="true"
+                        android:gravity="center_vertical|left"
+                        android:text="轴流风机控制"
+                        android:textColor="#000000"
+                        android:textSize="40px"
+                        android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fengji_3_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/fengji_3_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv33"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90px"
+                        android:background="@drawable/top_bar_bg1"
+                        android:clickable="true"
+                        android:gravity="center_vertical|left"
+                        android:text="顶开窗控制"
+                        android:textColor="#000000"
+                        android:textSize="40px"
+                        android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/dingji_3_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_3_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_3_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_3_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv34"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90px"
+                        android:background="@drawable/top_bar_bg1"
+                        android:clickable="true"
+                        android:gravity="center_vertical|left"
+                        android:text="内遮阴机组控制"
+                        android:textColor="#000000"
+                        android:textSize="40px"
+                        android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_3_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_3_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_3_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_3_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv35"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90px"
+                        android:background="@drawable/top_bar_bg1"
+                        android:clickable="true"
+                        android:gravity="center_vertical|left"
+                        android:text="补光灯组控制"
+                        android:textColor="#000000"
+                        android:textSize="40px"
+                        android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/light_3_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/light_3_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv36"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90px"
+                        android:background="@drawable/top_bar_bg1"
+                        android:clickable="true"
+                        android:gravity="center_vertical|left"
+                        android:text="湿帘水泵控制"
+                        android:textColor="#000000"
+                        android:textSize="40px"
+                        android:typeface="sans" />
+                    <LinearLayout
+                        android:id="@+id/layout_tab36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/shilian_3_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/shilian_3_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv37"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="地源热泵"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layout_tab37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="电源开关："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup37_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dianyuan_3_on"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="开"
+
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/dianyuan_3_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="关"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="模式："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup37_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/moshi_3_on"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="制热"
+
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/moshi_3_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="制冷"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="风速："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup37_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/fengsu_3_low"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="低"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_3_mid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="中"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_3_high"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="高"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_3_auto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="自动"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当前室温："/>
+
+                        <TextView
+                            android:id="@+id/shiwen3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="温度调节:"/>
+
+                        <LinearLayout
+                            android:id="@+id/NumView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/Decrease3"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:clickable="true"
+                                android:background="@drawable/decrease"/>
+
+                            <EditText
+                                android:id="@+id/Num3"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:background="#00000000" />
+
+                            <Button
+                                android:id="@+id/Increase3"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:clickable="true"
+                                android:background="@drawable/add"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/Confirm3"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:text="确定"
+                                android:textColor="@color/white"
+                                android:background="@drawable/queding"
+                                android:clickable="true"/>
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:text=""/>
+
+                            <Button
+                                android:id="@+id/Quit3"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:text="取消"
+                                android:textColor="@color/white"
+                                android:background="@drawable/queding"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/kongbai3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:text=""/>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            //连栋东区4
+            <LinearLayout
+                android:id="@+id/tab04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv41"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="手自动切换"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/auto4_1"
+                        android:text="手自动1"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/auto_41_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/auto_41_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="手动"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/auto4_2"
+                        android:text="手自动2"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/auto_42_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/auto_42_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="手动"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv42"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="风机控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:text="风机1"
+                        android:id="@+id/fengji4_1"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup42_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/fengji_4_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/fengji_4_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:text="风机2"
+                        android:id="@+id/fengji4_2"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup42_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/fengji_4_2_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/fengji_4_2_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="风机3"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/fengji4_3"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup42_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/fengji_4_3_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/fengji_4_3_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv43"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="顶开窗控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/dingkaichuang4_1"
+                        android:text="顶开窗1"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup43_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+                        <RadioButton
+                            android:id="@+id/dingji_4_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_4_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_4_1_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_4_1_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/dingkaichuang4_2"
+                        android:text="顶开窗2"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup43_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+                        <RadioButton
+                            android:id="@+id/dingji_4_2_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_4_2_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_4_2_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_4_2_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv44"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="内遮阴机组控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_4_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_4_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_4_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_4_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv45"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="补光灯组控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_45_1"
+                            android:text="请选择：           "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/dark"/>
+                    <Spinner
+                        android:id="@+id/spinner4_1"
+                        android:layout_width="240dp"
+                        android:layout_height="30dp">
+                    </Spinner>
+                    </LinearLayout>
+                    <RadioGroup
+                        android:id="@+id/radioGroup45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/light_4_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/light_4_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView android:id="@+id/tv46"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="湿帘水泵控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+                        <RadioButton
+                            android:id="@+id/shilian_4_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/shilian_4_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv47"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="外遮阳控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/waizheyang_4_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/waizheyang_4_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/waizheyang_4_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/waizheyang_4_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv48"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="环流风机控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/tv_4_1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:text="环流风机1"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup48_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/huanliu_4_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/huanliu_4_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:id="@+id/tv_4_2"
+                        android:text="环流风机2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark" />
+                    <RadioGroup
+                        android:id="@+id/radioGroup48_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/huanliu_4_2_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/huanliu_4_2_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv49"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="侧窗控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab49"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/cechuang_4_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/cechuang_4_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/cechuang_4_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/cechuang_4_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv410"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="地源热泵"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout41">
+                    <TextView
+                        android:id="@+id/tab11_tv4"
+                        android:layout_width="150dp"
+                        android:layout_height="31dp"
+                        android:layout_marginBottom="101dp"
+                        android:text="请选择房间号"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"/>
+                    <Spinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+                    </Spinner>
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layout_tab410"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="电源开关："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup410_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dianyuan_4_on"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="开"
+
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/dianyuan_4_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="关"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="模式："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup410_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/moshi_4_on"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="制热"
+
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/moshi_4_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="制冷"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="风速："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup410_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/fengsu_4_low"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="低"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_4_mid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="中"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_4_high"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="高"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_4_auto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="自动"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当前室温："/>
+
+                        <TextView
+                            android:id="@+id/shiwen4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="温度调节:"/>
+
+                        <LinearLayout
+                            android:id="@+id/NumView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/Decrease4"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:clickable="true"
+                                android:background="@drawable/decrease"/>
+
+                            <EditText
+                                android:id="@+id/Num4"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:background="#00000000" />
+
+                            <Button
+                                android:id="@+id/Increase4"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:clickable="true"
+                                android:background="@drawable/add"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/Confirm4"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:text="确定"
+                                android:textColor="@color/white"
+                                android:background="@drawable/queding"
+                                android:clickable="true"/>
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:text=""/>
+
+                            <Button
+                                android:id="@+id/Quit4"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:text="取消"
+                                android:textColor="@color/white"
+                                android:background="@drawable/queding"
+                                android:clickable="true"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/kongbai4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:text=""/>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            //连栋东区5
+            <LinearLayout
+                android:id="@+id/tab05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv51"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="手自动切换"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/auto5_1"
+                        android:text="手自动1"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/auto_51_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/auto_51_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="手动"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/auto5_2"
+                        android:text="手自动2"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/auto_52_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/auto_52_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="手动"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv52"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="风机控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:text="风机1"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup52_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fengji_5_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/fengji_5_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:text="风机2"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup52_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fengji_5_2_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/fengji_5_2_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:text="风机3"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup52_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fengji_5_3_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/fengji_5_3_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv53"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="顶开窗控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab53"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:text="顶开窗1" />
+                    <RadioGroup
+                        android:id="@+id/radioGroup53_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/dingji_5_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_5_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_5_1_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_5_1_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:text="顶开窗2" />
+                    <RadioGroup
+                        android:id="@+id/radioGroup53_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/dingji_5_2_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_5_2_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_5_2_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_5_2_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv54"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="内遮阴机组控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab54"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_5_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_5_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_5_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_5_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv55"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="补光灯组控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:id="@+id/layout_tab55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_55_1"
+                            android:text="请选择：           "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/dark"/>
+                        <Spinner
+                            android:id="@+id/spinner5_1"
+                            android:layout_width="240dp"
+                            android:layout_height="30dp">
+                        </Spinner>
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/light_5_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/light_5_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv56"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="湿帘水泵控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab56"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup56"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/shilian_5_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/shilian_5_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv57"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="外遮阳控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab57"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup57"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/waizheyang_5_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/waizheyang_5_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/waizheyang_5_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/waizheyang_5_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv58"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="环流风机控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab58"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="@color/dark"
+                    android:text="环流风机1" />
+                    <RadioGroup
+                        android:id="@+id/radioGroup58_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/huanliu_5_1_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/huanliu_5_1_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:text="环流风机2" />
+                    <RadioGroup
+                        android:id="@+id/radioGroup58_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/huanliu_5_2_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/huanliu_5_2_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv59"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="侧窗控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab59"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/cechuang_5_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/cechuang_5_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+                        <RadioButton
+                            android:id="@+id/cechuang_5_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/cechuang_5_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv510"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="地源热泵"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout51">
+                    <TextView
+                        android:id="@+id/tab11_tv5"
+                        android:layout_width="150dp"
+                        android:layout_height="31dp"
+                        android:layout_marginBottom="101dp"
+                        android:text="请选择房间号"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"/>
+                    <Spinner
+                        android:id="@+id/spinner5"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+                    </Spinner>
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layout_tab510"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="电源开关："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup510_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dianyuan_5_on"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="开"
+
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/dianyuan_5_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="关"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="模式："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup510_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/moshi_5_on"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="制热"
+
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/moshi_5_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="制冷"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="风速："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup510_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/fengsu_5_low"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="低"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_5_mid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="中"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_5_high"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="高"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_5_auto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="自动"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当前室温："/>
+
+                        <TextView
+                            android:id="@+id/shiwen5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="温度调节:"/>
+
+                        <LinearLayout
+                            android:id="@+id/NumView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/Decrease5"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:clickable="true"
+                                android:background="@drawable/decrease"/>
+
+                            <EditText
+                                android:id="@+id/Num5"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:background="#00000000" />
+
+                            <Button
+                                android:id="@+id/Increase5"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:clickable="true"
+                                android:background="@drawable/add"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/Confirm5"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:text="确定"
+                                android:textColor="@color/white"
+                                android:background="@drawable/queding"
+                                android:clickable="true"/>
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:text=""/>
+
+                            <Button
+                                android:id="@+id/Quit5"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:text="取消"
+                                android:textColor="@color/white"
+                                android:background="@drawable/queding"
+                                android:clickable="true"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/kongbai5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:text=""/>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            //控制室6
+            <LinearLayout
+                android:id="@+id/tab06"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv61"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="手自动切换"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/auto_61_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/auto_61_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="手动"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv62"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="顶开窗控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab62"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/dingji_6_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_6_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_6_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/dingji_6_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv63"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="内遮阴机组控制"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <RadioGroup
+                        android:id="@+id/radioGroup63"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_6_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="展开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_6_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收缩"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_6_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="展开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/neizhemu_6_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="收缩停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv64"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="地源热泵"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layout_tab64"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="电源开关："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup64_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/dianyuan_6_on"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="开"
+
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/dianyuan_6_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="关"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="模式："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup64_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/moshi_6_on"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="制热"
+
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/moshi_6_off"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="制冷"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="风速："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup64_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/fengsu_6_low"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="低"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_6_mid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="中"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_6_high"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="高"
+                                android:textColor="@color/dark" />
+
+                            <RadioButton
+                                android:id="@+id/fengsu_6_auto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="自动"
+                                android:textColor="@color/dark" />
+                        </RadioGroup>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当前室温："/>
+
+                        <TextView
+                            android:id="@+id/shiwen6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="温度调节:"/>
+
+                        <LinearLayout
+                            android:id="@+id/NumView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/Decrease6"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:clickable="true"
+                                android:background="@drawable/decrease"/>
+
+                            <EditText
+                                android:id="@+id/Num6"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:background="#00000000" />
+
+                            <Button
+                                android:id="@+id/Increase6"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:clickable="true"
+                                android:background="@drawable/add"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text=""/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/Confirm6"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:text="确定"
+                                android:textColor="@color/white"
+                                android:background="@drawable/queding"
+                                android:clickable="true"/>
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_horizontal"
+                                android:text=""/>
+
+                            <Button
+                                android:id="@+id/Quit6"
+                                android:layout_width="90dp"
+                                android:layout_height="40dp"
+                                android:text="取消"
+                                android:textColor="@color/white"
+                                android:background="@drawable/queding"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/kongbai6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:text=""/>
+                    </LinearLayout>
+                </ScrollView>
+                <TextView
+                    android:id="@+id/tv65"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90px"
+                    android:background="@drawable/top_bar_bg1"
+                    android:clickable="true"
+                    android:gravity="center_vertical|left"
+                    android:text="电磁阀组"
+                    android:textColor="#000000"
+                    android:textSize="40px"
+                    android:typeface="sans" />
+                <LinearLayout
+                    android:id="@+id/layout_tab65"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/auto7_1"
+                        android:text="手自动"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup65"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/auto_65_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/auto_65_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/diancifa6_1"
+                        android:text="电磁阀1"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/diancifa_61_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="打开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/diancifa_61_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="打开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/diancifa_61_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="关闭"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/diancifa_61_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="关闭停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="@color/dark"
+                        android:id="@+id/diancifa6_2"
+                        android:text="电磁阀2"/>
+                    <RadioGroup
+                        android:id="@+id/radioGroup67"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/diancifa_62_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="打开"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/diancifa_62_onstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="打开停止"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/diancifa_62_off"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="关闭"
+                            android:textColor="@color/dark" />
+
+                        <RadioButton
+                            android:id="@+id/diancifa_62_offstop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="关闭停止"
+                            android:textColor="@color/dark" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+       </FrameLayout>
+    </LinearLayout>
+</TabHost>
